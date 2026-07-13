@@ -1,0 +1,58 @@
+name: Build Android APK
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:  # Allows manual trigger from GitHub UI
+
+permissions:
+  contents: write
+
+jobs:
+  build-apk:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+
+      - name: Install dependencies
+        run: flutter pub get
+        working-directory: .
+
+      - name: Build APK
+        run: flutter build apk --release --verbose
+        working-directory: .
+
+      - name: Verify APK
+        run: ls -R build/app/outputs/flutter-apk/
+        working-directory: .
+
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: stardust-vault-apk
+          path: build/app/outputs/flutter-apk/app-release.apk
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v1.0.${{ github.run_number }}
+          name: Stardust Vault v1.0.${{ github.run_number }}
+          body: |
+            🚀 Auto-built APK from commit ${{ github.sha }}
+            
+            📱 Download `app-release.apk` below and install on your Android phone.
+            📸 Document scanner with edge detection & auto-crop included.
+          files: build/app/outputs/flutter-apk/app-release.apk

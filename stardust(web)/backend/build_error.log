@@ -1,0 +1,31 @@
+✘ [ERROR] No loader is configured for ".node" files: node_modules/sharp/build/Release/sharp-darwin-arm64v8.node
+
+    node_modules/sharp/lib/sharp.js:10:27:
+      10 │ ...ports = require(`../build/Release/sharp-${platformAndArch}.node`);
+         ╵                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1 error
+node:child_process:964
+    throw err;
+    ^
+
+Error: Command failed: /Volumes/ssd/coc/stardust(web)/backend/node_modules/@esbuild/darwin-arm64/bin/esbuild src/app.js --bundle --platform=node --target=node18 --outfile=dist/bundle.js
+    at genericNodeError (node:internal/errors:998:15)
+    at wrappedFn (node:internal/errors:543:14)
+    at checkExecSyncError (node:child_process:925:11)
+    at Object.execFileSync (node:child_process:961:15)
+    at Object.<anonymous> (/Volumes/ssd/coc/stardust(web)/backend/node_modules/esbuild/bin/esbuild:222:28)
+    at Module._compile (node:internal/modules/cjs/loader:1803:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1934:10)
+    at Module.load (node:internal/modules/cjs/loader:1524:32)
+    at Module._load (node:internal/modules/cjs/loader:1326:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14) {
+  status: 1,
+  signal: null,
+  output: [ null, null, null ],
+  pid: 55072,
+  stdout: null,
+  stderr: null
+}
+
+Node.js v25.4.0

@@ -1,0 +1,43 @@
+{
+  "name": "stardust-app-backend",
+  "version": "1.0.0",
+  "description": "Stardust Vault Mobile App Backend",
+  "main": "src/app.js",
+  "bin": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "node --watch src/app.js"
+  },
+  "type": "commonjs",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.0.0",
+    "@aws-sdk/s3-request-presigner": "^3.0.0",
+    "@google/generative-ai": "^0.24.1",
+    "axios": "^1.13.6",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.2.1",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.3",
+    "multer": "^2.1.0",
+    "mysql2": "^2.3.3",
+    "nodemailer": "^6.10.0",
+    "winston": "^3.19.0"
+  },
+  "pkg": {
+    "assets": [
+      "node_modules/axios/**/*",
+      ".env",
+      "global-bundle.pem"
+    ],
+    "targets": [
+      "node18-linux-x64",
+      "node18-macos-x64"
+    ]
+  },
+  "devDependencies": {
+    "esbuild": "^0.27.3"
+  }
+}

@@ -1,0 +1,105 @@
+================================================================================
+STARDUST VAULT — CHANGE LOG
+================================================================================
+Use this document when updating the website version to stay in sync.
+
+================================================================================
+[2026-04-04] ASSET MANAGEMENT SYSTEM REDESIGN (Everplans-Inspired)
+================================================================================
+
+--- DATABASE CHANGES ---
+
+1. ALTER TABLE `assets`: Changed `category` column from ENUM to VARCHAR(50)
+   - Old ENUM: 'Credit Card','Bank Account','Insurance','Property','Legal Document','Nominee','Password','Investment','Vehicle','Collectible'
+   - New: VARCHAR(50) — allows any category key string
+
+2. Normalized all category values to lowercase snake_case:
+   - 'Credit Card'  → 'cards'
+   - 'Bank Account'  → 'banking'
+   - 'Insurance' / 'INSURANCE'  → 'insurance'
+   - 'Property'  → 'real_estate'
+   - 'Legal Document' / 'LEGAL'  → 'legal_documents'
+   - 'Nominee'  → 'contacts'
+   - 'Password' / 'PASSWORD'  → 'passwords'
+   - 'Investment'  → 'investments'
+   - 'Vehicle'  → 'vehicles'
+   - 'Collectible'  → 'collectibles'
+   - 'OTHERS'  → 'others'
+
+3. NEW TABLE `categories`: Reference table for valid categories
+   - category_key (PK), label, icon, sort_order, is_active
+
+--- BACKEND API CHANGES ---
+
+4. NEW unified API: /api/vault/:category
+   - GET    /api/vault/schemas         → Returns all category schemas (for frontend form generation)
+   - GET    /api/vault/summary         → Returns item counts per category
+   - GET    /api/vault/search?q=       → Cross-category search
+   - GET    /api/vault/:category       → List items in category
+   - GET    /api/vault/:category/:id   → Get single item
+   - POST   /api/vault/:category       → Add item (schema-validated)
+   - PUT    /api/vault/:category/:id   → Update item
+   - DELETE /api/vault/:category/:id   → Delete item
+
+5. NEW file: backend/src/config/category_schemas.js
+   - Central schema registry (11 categories with field definitions)
+   - Used by both backend (validation) and frontend (form generation)
+
+6. NEW file: backend/src/controllers/vaultController.js
+   - Replaces: assetController.js, insuranceController.js, passwordController.js,
+     legalController.js, contactController.js, othersController.js
+
+7. NEW file: backend/src/routes/vaultRoutes.js
+   - Replaces: assetRoutes.js, insuranceRoutes.js, passwordRoutes.js,
+     legalRoutes.js, contactRoutes.js, othersRoutes.js
+
+8. MODIFIED: backend/src/app.js
+   - Added: app.use('/api/vault', require('./routes/vaultRoutes'))
+   - Old routes kept temporarily with deprecation warnings
+
+--- FRONTEND CHANGES (Flutter) ---
+
+9. THEME OVERHAUL: Purple/lavender → Blue/white claymorphism
+   - Primary: #635BFF → #2563EB
+   - Secondary: #7C3AED → #3B82F6  
+   - All gradients, buttons, backgrounds updated
+   - No more purple/violet anywhere
+
+10. NEW widget: clay_card.dart (replaces glass_card.dart)
+    - Claymorphism style: soft shadows, rounded, white surfaces
+
+11. NEW: Schema-driven dynamic form system
+    - models/category_schema.dart — Dart models for schemas
+    - widgets/schema_driven_form.dart — Auto-generates forms from schemas
+    - widgets/field_widgets/ — Reusable clay-styled field components
+
+12. NEW: Unified vault service (services/vault_service.dart)
+    - Replaces 6 separate service files
+
+13. NEW screens:
+    - category_dashboard_screen.dart — Universal category list view
+    - asset_detail_screen.dart — Universal item detail view
+    - add_asset_flow_screen.dart — Multi-step guided add flow
+
+14. MODIFIED: dashboard_screen.dart
+    - iPad: Persistent sidebar + main content (Apple Notes style)
+    - Mobile: Bottom tabs + category grid
+    - Dynamic category routing via schemas
+
+15. DEPRECATED screens (no longer imported from dashboard, kept for safe rollback):
+    - assets_screen.dart, insurance_screen.dart, passwords_screen.dart
+    - legal_center_screen.dart, contacts_screen.dart, others_screen.dart
+
+16. DEPRECATED widgets (no longer imported):
+    - add_asset_sheet.dart, add_password_sheet.dart, add_contact_sheet.dart
+
+17. DEPRECATED services (replaced by vault_service.dart):
+    - asset_service.dart, insurance_service.dart, password_service.dart
+    - legal_service.dart, contact_service.dart, others_service.dart
+
+--- FOR WEBSITE VERSION ---
+When updating the web version, apply:
+1. Run the SQL migration (see sql_migration.sql)
+2. Copy category_schemas.js to web backend
+3. Add /api/vault routes to web backend
+4. Update web frontend API calls from old endpoints to /api/vault/:category

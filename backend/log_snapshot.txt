@@ -1,0 +1,83 @@
+node : Ignoring invalid 
+configuration option 
+passed to Connection: 
+acquireTimeout. This is 
+currently a warning, but 
+in future versions of 
+MySQL2, an error will be 
+thrown if you pass an 
+invalid configuration 
+option to a Connection
+At line:1 char:1
++ node -e "try { 
+require('./src/app.js'); 
+} catch (e) { 
+console.error(e ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (I  
+  gnoring invali...to a   
+  Connection:String) [    
+], RemoteException
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+Ignoring invalid 
+configuration option 
+passed to Connection: 
+timeout. This is 
+currently a warning, but 
+in future versions of 
+MySQL2, an error will be 
+thrown if you pass an 
+invalid configuration 
+option to a Connection
+Error: Cannot find module 
+'../models'
+Require stack:
+- E:\stardust\stardust-app
+-backend\src\controllers\s
+ecurityController.js
+- E:\stardust\stardust-app
+-backend\src\routes\securi
+tyRoutes.js
+- E:\stardust\stardust-app
+-backend\src\app.js
+- E:\stardust\stardust-app
+-backend\[eval]
+    at 
+Module._resolveFilename (n
+ode:internal/modules/cjs/l
+oader:1456:15)
+    at defaultResolveImpl 
+(node:internal/modules/cjs
+/loader:1066:19)
+    at 
+resolveForCJSWithHooks (no
+de:internal/modules/cjs/lo
+ader:1071:22)
+    at Module._load (node:
+internal/modules/cjs/loade
+r:1242:25)
+    at wrapModuleLoad (nod
+e:internal/modules/cjs/loa
+der:255:19)
+    at Module.require (nod
+e:internal/modules/cjs/loa
+der:1556:12)
+    at require (node:inter
+nal/modules/helpers:152:16
+)
+    at Object.<anonymous> 
+(E:\stardust\stardust-app-
+backend\src\controllers\se
+curityController.js:1:25)
+    at Module._compile (no
+de:internal/modules/cjs/lo
+ader:1812:14)
+    at Object..js (node:in
+ternal/modules/cjs/loader:
+1943:10)

@@ -1,0 +1,214 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#E0E0E0" ss:Pattern="Solid"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Core Features">
+  <Table>
+   <Column ss:Width="100"/>
+   <Column ss:Width="150"/>
+   <Column ss:Width="300"/>
+   <Column ss:Width="80"/>
+   <Row ss:StyleID="s62">
+    <Cell><Data ss:Type="String">Feature Category</Data></Cell>
+    <Cell><Data ss:Type="String">Feature Name</Data></Cell>
+    <Cell><Data ss:Type="String">Description</Data></Cell>
+    <Cell><Data ss:Type="String">Status</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Authentication</Data></Cell>
+    <Cell><Data ss:Type="String">Secure Multi-Factor Login</Data></Cell>
+    <Cell><Data ss:Type="String">JWT-based authentication with mandatory 6-digit OTP verification via WhatsApp/Email.</Data></Cell>
+    <Cell><Data ss:Type="String">Live</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Authentication</Data></Cell>
+    <Cell><Data ss:Type="String">Role-Based Access (RBAC)</Data></Cell>
+    <Cell><Data ss:Type="String">Distinct workflows and dashboards for Customers and System Administrators.</Data></Cell>
+    <Cell><Data ss:Type="String">Live</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Asset Management</Data></Cell>
+    <Cell><Data ss:Type="String">Financial Vault</Data></Cell>
+    <Cell><Data ss:Type="String">Secure storage for Bank Accounts, Insurance, Real Estate, and Digital Assets.</Data></Cell>
+    <Cell><Data ss:Type="String">Live</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Asset Management</Data></Cell>
+    <Cell><Data ss:Type="String">Card Benefits AI</Data></Cell>
+    <Cell><Data ss:Type="String">Gemini-powered OCR and analysis to extract benefits from credit card statements.</Data></Cell>
+    <Cell><Data ss:Type="String">Live</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Succession</Data></Cell>
+    <Cell><Data ss:Type="String">Inactivity Monitor</Data></Cell>
+    <Cell><Data ss:Type="String">Automated &quot;Pulse Check&quot; system that tracks user activity over months.</Data></Cell>
+    <Cell><Data ss:Type="String">Live</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Succession</Data></Cell>
+    <Cell><Data ss:Type="String">Automated Trigger</Data></Cell>
+    <Cell><Data ss:Type="String">Multi-stage escalation protocol (Yellow/Red) that initiates when inactivity thresholds are met.</Data></Cell>
+    <Cell><Data ss:Type="String">Live</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Nominee System</Data></Cell>
+    <Cell><Data ss:Type="String">Trusted Contact Management</Data></Cell>
+    <Cell><Data ss:Type="String">Ability to register, verify, and link multiple nominees with specific relationship settings.</Data></Cell>
+    <Cell><Data ss:Type="String">Live</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Nominee System</Data></Cell>
+    <Cell><Data ss:Type="String">Identity Verification</Data></Cell>
+    <Cell><Data ss:Type="String">Secure portal for nominees to upload ID proof and claim vault access post-succession.</Data></Cell>
+    <Cell><Data ss:Type="String">Live</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Security</Data></Cell>
+    <Cell><Data ss:Type="String">Zero-Knowledge Pattern</Data></Cell>
+    <Cell><Data ss:Type="String">Sensitive vault metadata is protected using industry-standard encryption protocols.</Data></Cell>
+    <Cell><Data ss:Type="String">Live</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Security</Data></Cell>
+    <Cell><Data ss:Type="String">Audit Logging</Data></Cell>
+    <Cell><Data ss:Type="String">Comprehensive tracking of all logins, IP addresses, and device information for security audits.</Data></Cell>
+    <Cell><Data ss:Type="String">Live</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Security</Data></Cell>
+    <Cell><Data ss:Type="String">Multi-Method Recovery</Data></Cell>
+    <Cell><Data ss:Type="String">Account recovery via registered security questions or WhatsApp-based identity proofing.</Data></Cell>
+    <Cell><Data ss:Type="String">Live</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Workflow</Data></Cell>
+    <Cell><Data ss:Type="String">Onboarding Tour</Data></Cell>
+    <Cell><Data ss:Type="String">Step-by-step interactive guide to help users complete their vault setup and policy configuration.</Data></Cell>
+    <Cell><Data ss:Type="String">Live</Data></Cell>
+   </Row>
+  </Table>
+ </Worksheet>
+ <Worksheet ss:Name="API Services">
+  <Table>
+   <Column ss:Width="150"/>
+   <Column ss:Width="150"/>
+   <Column ss:Width="300"/>
+   <Column ss:Width="100"/>
+   <Row ss:StyleID="s62">
+    <Cell><Data ss:Type="String">Service Name</Data></Cell>
+    <Cell><Data ss:Type="String">Feature</Data></Cell>
+    <Cell><Data ss:Type="String">Technical Specification</Data></Cell>
+    <Cell><Data ss:Type="String">Category</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">OTP API Service</Data></Cell>
+    <Cell><Data ss:Type="String">Global Delivery</Data></Cell>
+    <Cell><Data ss:Type="String">Multi-channel delivery of 6-digit codes via WhatsApp (via MSG91/Twilio), SMS, and Email.</Data></Cell>
+    <Cell><Data ss:Type="String">Current/Planned</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">OTP API Service</Data></Cell>
+    <Cell><Data ss:Type="String">Secure Hashing</Data></Cell>
+    <Cell><Data ss:Type="String">Automated bcrypt hashing of codes; never stored in plaintext on the database.</Data></Cell>
+    <Cell><Data ss:Type="String">Current/Planned</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">OTP API Service</Data></Cell>
+    <Cell><Data ss:Type="String">Custom Expiry</Data></Cell>
+    <Cell><Data ss:Type="String">Configurable TTL (Time-To-Live) for codes, defaulting to 5-10 minutes.</Data></Cell>
+    <Cell><Data ss:Type="String">Current/Planned</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">OTP API Service</Data></Cell>
+    <Cell><Data ss:Type="String">Rate Limiting</Data></Cell>
+    <Cell><Data ss:Type="String">Intelligent throttling to prevent brute-force attacks on specific mobile numbers.</Data></Cell>
+    <Cell><Data ss:Type="String">Current/Planned</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">OTP API Service</Data></Cell>
+    <Cell><Data ss:Type="String">Verification API</Data></Cell>
+    <Cell><Data ss:Type="String">Direct endpoint for third-party apps to validate user-submitted codes against active sessions.</Data></Cell>
+    <Cell><Data ss:Type="String">Planned</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Message Forwarding</Data></Cell>
+    <Cell><Data ss:Type="String">SMS-to-WhatsApp</Data></Cell>
+    <Cell><Data ss:Type="String">Automated redirection of incoming SMS messages to a designated WhatsApp number.</Data></Cell>
+    <Cell><Data ss:Type="String">Planned</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Message Forwarding</Data></Cell>
+    <Cell><Data ss:Type="String">Webhook Forwarding</Data></Cell>
+    <Cell><Data ss:Type="String">Real-time forwarding of incoming messages to a specified URL for external automation.</Data></Cell>
+    <Cell><Data ss:Type="String">Planned</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Message Forwarding</Data></Cell>
+    <Cell><Data ss:Type="String">Routing Logic</Data></Cell>
+    <Cell><Data ss:Type="String">Keyword-based routing to direct messages to different teams or endpoints.</Data></Cell>
+    <Cell><Data ss:Type="String">Planned</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Message Forwarding</Data></Cell>
+    <Cell><Data ss:Type="String">Centralized Logs</Data></Cell>
+    <Cell><Data ss:Type="String">Unified dashboard to view, search, and audit all forwarded message history.</Data></Cell>
+    <Cell><Data ss:Type="String">Planned</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Message Forwarding</Data></Cell>
+    <Cell><Data ss:Type="String">Notification API</Data></Cell>
+    <Cell><Data ss:Type="String">Push notifications to mobile apps when a message is successfully forwarded.</Data></Cell>
+    <Cell><Data ss:Type="String">Planned</Data></Cell>
+   </Row>
+  </Table>
+ </Worksheet>
+ <Worksheet ss:Name="Roadmap">
+  <Table>
+   <Column ss:Width="150"/>
+   <Column ss:Width="300"/>
+   <Column ss:Width="100"/>
+   <Row ss:StyleID="s62">
+    <Cell><Data ss:Type="String">Roadmap Item</Data></Cell>
+    <Cell><Data ss:Type="String">Description</Data></Cell>
+    <Cell><Data ss:Type="String">Intent</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Account Aggregator</Data></Cell>
+    <Cell><Data ss:Type="String">Deep integration with Setu AA for automated financial data fetching.</Data></Cell>
+    <Cell><Data ss:Type="String">Automation</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Biometric Bypass</Data></Cell>
+    <Cell><Data ss:Type="String">FaceID/Fingerprint support for secondary authentication on mobile devices.</Data></Cell>
+    <Cell><Data ss:Type="String">UX</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Smart Portfolio AI</Data></Cell>
+    <Cell><Data ss:Type="String">AI-driven insights on asset diversification and recovery potential.</Data></Cell>
+    <Cell><Data ss:Type="String">Intelligence</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Enterprise White-Label</Data></Cell>
+    <Cell><Data ss:Type="String">Providing the OTP and Vault infrastructure to other banks and legacy firms.</Data></Cell>
+    <Cell><Data ss:Type="String">B2B</Data></Cell>
+   </Row>
+  </Table>
+ </Worksheet>
+</Workbook>

@@ -1,0 +1,272 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="sSection">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#FFFFFF" ss:Bold="1"/>
+   <Interior ss:Color="#4472C4" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="sHeader">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#D9E1F2" ss:Pattern="Solid"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="sData">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#E0E0E0"/>
+   </Borders>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Vault User Journey">
+  <Table>
+   <Column ss:Width="150"/>
+   <Column ss:Width="180"/>
+   <Column ss:Width="400"/>
+   <Column ss:Width="100"/>
+   
+   <!-- SECTION 1: IDENTITY & SECURITY -->
+   <Row ss:Height="25">
+    <Cell ss:MergeAcross="3" ss:StyleID="sSection"><Data ss:Type="String">PHASE 1: IDENTITY, ONBOARDING &amp; MULTI-FACTOR AUTHENTICATION</Data></Cell>
+   </Row>
+   <Row ss:StyleID="sHeader">
+    <Cell><Data ss:Type="String">Journey Stage</Data></Cell>
+    <Cell><Data ss:Type="String">Feature / Action</Data></Cell>
+    <Cell><Data ss:Type="String">Detailed Functional Requirement</Data></Cell>
+    <Cell><Data ss:Type="String">Platform</Data></Cell>
+   </Row>
+   <Row ss:StyleID="sData">
+    <Cell><Data ss:Type="String">Initial Access</Data></Cell>
+    <Cell><Data ss:Type="String">Universal Landing</Data></Cell>
+    <Cell><Data ss:Type="String">High-performance entry page with direct links to Vault Setup and Admin Portals.</Data></Cell>
+    <Cell><Data ss:Type="String">Web/Mobile</Data></Cell>
+   </Row>
+   <Row ss:StyleID="sData">
+    <Cell><Data ss:Type="String">User Registration</Data></Cell>
+    <Cell><Data ss:Type="String">Quick Sign-Up</Data></Cell>
+    <Cell><Data ss:Type="String">Capture Full Name, Email, and Mobile Number. Initial validation for number formats.</Data></Cell>
+    <Cell><Data ss:Type="String">Web/Mobile</Data></Cell>
+   </Row>
+   <Row ss:StyleID="sData">
+    <Cell><Data ss:Type="String">User Registration</Data></Cell>
+    <Cell><Data ss:Type="String">WhatsApp Verification</Data></Cell>
+    <Cell><Data ss:Type="String">Automated 6-digit OTP sent via WhatsApp to verify phone ownership during signup.</Data></Cell>
+    <Cell><Data ss:Type="String">API/Mobile</Data></Cell>
+   </Row>
+   <Row ss:StyleID="sData">
+    <Cell><Data ss:Type="String">Security Setup</Data></Cell>
+    <Cell><Data ss:Type="String">Master Security Code</Data></Cell>
+    <Cell><Data ss:Type="String">Generation of a unique 9-character alphanumeric Master Code for nominee-based unlocking.</Data></Cell>
+    <Cell><Data ss:Type="String">Backend</Data></Cell>
+   </Row>
+   <Row ss:StyleID="sData">
+    <Cell><Data ss:Type="String">Security Setup</Data></Cell>
+    <Cell><Data ss:Type="String">Legacy Recovery</Data></Cell>
+    <Cell><Data ss:Type="String">Selection and hashing of 3 security questions to ensure account recovery if mobile is lost.</Data></Cell>
+    <Cell><Data ss:Type="String">Web/Mobile</Data></Cell>
+   </Row>
+   <Row ss:StyleID="sData">
+    <Cell><Data ss:Type="String">Login Flow</Data></Cell>
+    <Cell><Data ss:Type="String">Dual-Factor Login</Data></Cell>
+    <Cell><Data ss:Type="String">MFA enforced: Password check followed by real-time WhatsApp OTP for every session.</Data></Cell>
+    <Cell><Data ss:Type="String">API/Web</Data></Cell>
+   </Row>
+   <Row ss:StyleID="sData">
+    <Cell><Data ss:Type="String">Onboarding</Data></Cell>
+    <Cell><Data ss:Type="String">Interactive Walkthrough</Data></Cell>
+    <Cell><Data ss:Type="String">Visual guided tour explaining Asset management and Nominee registration to new users.</Data></Cell>
+    <Cell><Data ss:Type="String">Mobile-Ready UI</Data></Cell>
+   </Row>
+
+   <!-- SECTION 2: ASSET MANAGEMENT -->
+   <Row ss:Height="25">
+    <Cell ss:MergeAcross="3" ss:StyleID="sSection"><Data ss:Type="String">PHASE 2: SECURE ASSET DEPOSITORY &amp; AI INTELLIGENCE</Data></Cell>
+   </Row>
+   <Row ss:StyleID="sHeader">
+    <Cell><Data ss:Type="String">Journey Stage</Data></Cell>
+    <Cell><Data ss:Type="String">Feature / Action</Data></Cell>
+    <Cell><Data ss:Type="String">Detailed Functional Requirement</Data></Cell>
+    <Cell><Data ss:Type="String">Platform</Data></Cell>
+   </Row>
+   <Row ss:StyleID="sData">
+    <Cell><Data ss:Type="String">Vault Entry</Data></Cell>
+    <Cell><Data ss:Type="String">Financial Dashboard</Data></Cell>
+    <Cell><Data ss:Type="String">Consolidated view of all registered assets (Bank, Insurance, Real Estate) with status indicators.</Data></Cell>
+    <Cell><Data ss:Type="String">Web/Mobile</Data></Cell>
+   </Row>
+   <Row ss:StyleID="sData">
+    <Cell><Data ss:Type="String">Data Ingestion</Data></Cell>
+    <Cell><Data ss:Type="String">AI Benefit Scanner</Data></Cell>
+    <Cell><Data ss:Type="String">Upload Credit Card statements; AI extracts insurance coverage, lounge access, and merchant rewards automatically.</Data></Cell>
+    <Cell><Data ss:Type="String">Gemini AI / API</Data></Cell>
+   </Row>
+   <Row ss:StyleID="sData">
+    <Cell><Data ss:Type="String">Data Ingestion</Data></Cell>
+    <Cell><Data ss:Type="String">Categorized Asset Forms</Data></Cell>
+    <Cell><Data ss:Type="String">Structured templates for entering specialized data for Demat accounts, Crypto Wallets, and Property Deeds.</Data></Cell>
+    <Cell><Data ss:Type="String">Mobile-Ready UI</Data></Cell>
+   </Row>
+   <Row ss:StyleID="sData">
+    <Cell><Data ss:Type="String">Profile Management</Data></Cell>
+    <Cell><Data ss:Type="String">Completion Health Score</Data></Cell>
+    <Cell><Data ss:Type="String">Dynamic tracker showing % of profile completion; prompts user to fill missing fields like DOB/Address for legal validity.</Data></Cell>
+    <Cell><Data ss:Type="String">Web/Mobile</Data></Cell>
+   </Row>
+
+   <!-- SECTION 3: SUCCESSion & NOMINEE -->
+   <Row ss:Height="25">
+    <Cell ss:MergeAcross="3" ss:StyleID="sSection"><Data ss:Type="String">PHASE 3: GOVERNANCE, SUCCESSION &amp; NOMINEE LIFECYCLE</Data></Cell>
+   </Row>
+   <Row ss:StyleID="sHeader">
+    <Cell><Data ss:Type="String">Journey Stage</Data></Cell>
+    <Cell><Data ss:Type="String">Feature / Action</Data></Cell>
+    <Cell><Data ss:Type="String">Detailed Functional Requirement</Data></Cell>
+    <Cell><Data ss:Type="String">Platform</Data></Cell>
+   </Row>
+   <Row ss:StyleID="sData">
+    <Cell><Data ss:Type="String">Policy Setting</Data></Cell>
+    <Cell><Data ss:Type="String">Vault Pulse Policy</Data></Cell>
+    <Cell><Data ss:Type="String">User defines 'Inactivity Trigger Period' (e.g. 6 months). System monitors 'Last Login' timestamp daily.</Data></Cell>
+    <Cell><Data ss:Type="String">Backend/DB</Data></Cell>
+   </Row>
+   <Row ss:StyleID="sData">
+    <Cell><Data ss:Type="String">Nominee Setup</Data></Cell>
+    <Cell><Data ss:Type="String">Nominee Registration</Data></Cell>
+    <Cell><Data ss:Type="String">Assign legal contacts with specific relationship roles. Limit of 2-5 nominees based on subscription policy.</Data></Cell>
+    <Cell><Data ss:Type="String">Web/Mobile</Data></Cell>
+   </Row>
+   <Row ss:StyleID="sData">
+    <Cell><Data ss:Type="String">Nominee Setup</Data></Cell>
+    <Cell><Data ss:Type="String">Double-Verification</Data></Cell>
+    <Cell><Data ss:Type="String">Mandatory Email &amp; WhatsApp OTP sent to Nominees to verify their details are accurate before policy activation.</Data></Cell>
+    <Cell><Data ss:Type="String">API/Communication</Data></Cell>
+   </Row>
+   <Row ss:StyleID="sData">
+    <Cell><Data ss:Type="String">Nominee Setup</Data></Cell>
+    <Cell><Data ss:Type="String">Automatic Linking</Data></Cell>
+    <Cell><Data ss:Type="String">System checks if Nominee is an existing Stardust user; automatically bridges accounts for seamless transition.</Data></Cell>
+    <Cell><Data ss:Type="String">Backend</Data></Cell>
+   </Row>
+   <Row ss:StyleID="sData">
+    <Cell><Data ss:Type="String">Inactivity Monitoring</Data></Cell>
+    <Cell><Data ss:Type="String">Security Pulse Reminders</Data></Cell>
+    <Cell><Data ss:Type="String">Scheduled WhatsApp &amp; Email alerts sent to User as reminders before the Inactivity Trigger is reached.</Data></Cell>
+    <Cell><Data ss:Type="String">Cron / API</Data></Cell>
+   </Row>
+   <Row ss:StyleID="sData">
+    <Cell><Data ss:Type="String">Succession Event</Data></Cell>
+    <Cell><Data ss:Type="String">Red Alert Trigger</Data></Cell>
+    <Cell><Data ss:Type="String">Upon trigger point, User status marks as 'Red'. Nominees receive priority automated Legacy notifications.</Data></Cell>
+    <Cell><Data ss:Type="String">Backend / API</Data></Cell>
+   </Row>
+   <Row ss:StyleID="sData">
+    <Cell><Data ss:Type="String">Account Claim</Data></Cell>
+    <Cell><Data ss:Type="String">Succession Evidence</Data></Cell>
+    <Cell><Data ss:Type="String">Nominee uses secure link to upload Proof (Death Cert/ID). Session is tokenized for security.</Data></Cell>
+    <Cell><Data ss:Type="String">Web Portal</Data></Cell>
+   </Row>
+   <Row ss:StyleID="sData">
+    <Cell><Data ss:Type="String">Account Claim</Data></Cell>
+    <Cell><Data ss:Type="String">Vault Unlock</Data></Cell>
+    <Cell><Data ss:Type="String">Admin verifies proof; Nominee enters Vault Owner's Master Security Code to reveal metadata.</Data></Cell>
+    <Cell><Data ss:Type="String">Admin / Vault</Data></Cell>
+   </Row>
+
+   <!-- SECTION 4: API SERVICES -->
+   <Row ss:Height="25">
+    <Cell ss:MergeAcross="3" ss:Section ss:StyleID="sSection"><Data ss:Type="String">PHASE 4: ENTERPRISE API SERVICES (OTP &amp; FORWARDING)</Data></Cell>
+   </Row>
+   <Row ss:StyleID="sHeader">
+    <Cell><Data ss:Type="String">Journey Stage</Data></Cell>
+    <Cell><Data ss:Type="String">Capability</Data></Cell>
+    <Cell><Data ss:Type="String">Detailed Functional Requirement</Data></Cell>
+    <Cell><Data ss:Type="String">Category</Data></Cell>
+   </Row>
+   <Row ss:StyleID="sData">
+    <Cell><Data ss:Type="String">Connectivity</Data></Cell>
+    <Cell><Data ss:Type="String">REST API Access</Data></Cell>
+    <Cell><Data ss:Type="String">Secure endpoints for third-party systems to trigger WhatsApp/SMS messages programmatically.</Data></Cell>
+    <Cell><Data ss:Type="String">Current</Data></Cell>
+   </Row>
+   <Row ss:StyleID="sData">
+    <Cell><Data ss:Type="String">OTP Lifecycle</Data></Cell>
+    <Cell><Data ss:Type="String">Secure Hashing Engine</Data></Cell>
+    <Cell><Data ss:Type="String">API automatically hashes every OTP using bcrypt before storage, ensuring zero-knowledge database safety.</Data></Cell>
+    <Cell><Data ss:Type="String">Current</Data></Cell>
+   </Row>
+   <Row ss:StyleID="sData">
+    <Cell><Data ss:Type="String">OTP Lifecycle</Data></Cell>
+    <Cell><Data ss:Type="String">Expiration Logic</Data></Cell>
+    <Cell><Data ss:Type="String">Configurable TTL (default 5m) with automatic 'is_used' flags to prevent replay attacks.</Data></Cell>
+    <Cell><Data ss:Type="String">Current</Data></Cell>
+   </Row>
+   <Row ss:StyleID="sData">
+    <Cell><Data ss:Type="String">Msg Forwarding</Data></Cell>
+    <Cell><Data ss:Type="String">SMS-to-WhatsApp Bridge</Data></Cell>
+    <Cell><Data ss:Type="String">Redirect incoming device SMS directly to a specified WhatsApp number/group. Includes Sender ID preservation.</Data></Cell>
+    <Cell><Data ss:Type="String">Planned</Data></Cell>
+   </Row>
+   <Row ss:StyleID="sData">
+    <Cell><Data ss:Type="String">Msg Forwarding</Data></Cell>
+    <Cell><Data ss:Type="String">Real-time Webhooks</Data></Cell>
+    <Cell><Data ss:Type="String">Instant PUSH notifications to an external URL when any message arrives on the target number.</Data></Cell>
+    <Cell><Data ss:Type="String">Planned</Data></Cell>
+   </Row>
+   <Row ss:StyleID="sData">
+    <Cell><Data ss:Type="String">Msg Forwarding</Data></Cell>
+    <Cell><Data ss:Type="String">Centralized Monitoring</Data></Cell>
+    <Cell><Data ss:Type="String">Dashboard to view forwarding history, delivery success rates, and active rerouting rules.</Data></Cell>
+    <Cell><Data ss:Type="String">Planned</Data></Cell>
+   </Row>
+
+   <!-- SECTION 5: TECHNICAL AUDIT -->
+   <Row ss:Height="25">
+    <Cell ss:MergeAcross="3" ss:Section ss:StyleID="sSection"><Data ss:Type="String">PHASE 5: TECHNICAL INFRASTRUCTURE &amp; MOBILE OPTIMIZATION</Data></Cell>
+   </Row>
+   <Row ss:StyleID="sHeader">
+    <Cell><Data ss:Type="String">Component</Data></Cell>
+    <Cell><Data ss:Type="String">Technical Rule</Data></Cell>
+    <Cell><Data ss:Type="String">Detailed Requirement</Data></Cell>
+    <Cell><Data ss:Type="String">Status</Data></Cell>
+   </Row>
+   <Row ss:StyleID="sData">
+    <Cell><Data ss:Type="String">Mobile Experience</Data></Cell>
+    <Cell><Data ss:Type="String">Thumb-Zone Interaction</Data></Cell>
+    <Cell><Data ss:Type="String">All critical 'Add' and 'Submit' buttons placed in the lower 30% of the screen for one-handed use.</Data></Cell>
+    <Cell><Data ss:Type="String">Active</Data></Cell>
+   </Row>
+   <Row ss:StyleID="sData">
+    <Cell><Data ss:Type="String">Mobile Experience</Data></Cell>
+    <Cell><Data ss:Type="String">Native Component Bridging</Data></Cell>
+    <Cell><Data ss:Type="String">Uses OS-native date/time pickers and camera integrations for document uploads.</Data></Cell>
+    <Cell><Data ss:Type="String">Active</Data></Cell>
+   </Row>
+   <Row ss:StyleID="sData">
+    <Cell><Data ss:Type="String">Backend/Security</Data></Cell>
+    <Cell><Data ss:Type="String">Rate Limiting &amp; Lockout</Data></Cell>
+    <Cell><Data ss:Type="String">Automatic 30-minute lockout after 5 failed login attempts to prevent brute-force attacks.</Data></Cell>
+    <Cell><Data ss:Type="String">Active</Data></Cell>
+   </Row>
+   <Row ss:StyleID="sData">
+    <Cell><Data ss:Type="String">Backend/Security</Data></Cell>
+    <Cell><Data ss:Type="String">SQL Injection Shield</Data></Cell>
+    <Cell><Data ss:Type="String">Full application of Parameterized queries across all 40+ endpoints to prevent data breaches.</Data></Cell>
+    <Cell><Data ss:Type="String">Active</Data></Cell>
+   </Row>
+  </Table>
+ </Worksheet>
+</Workbook>

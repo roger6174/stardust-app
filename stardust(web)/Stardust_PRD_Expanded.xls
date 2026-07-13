@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#E0E0E0" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s63">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Vault Core Features">
+  <Table>
+   <Column ss:Width="120"/>
+   <Column ss:Width="160"/>
+   <Column ss:Width="350"/>
+   <Column ss:Width="80"/>
+   <Row ss:StyleID="s62">
+    <Cell><Data ss:Type="String">Category</Data></Cell>
+    <Cell><Data ss:Type="String">Feature</Data></Cell>
+    <Cell><Data ss:Type="String">Expanded Detail</Data></Cell>
+    <Cell><Data ss:Type="String">Status</Data></Cell>
+   </Row>
+   <Row ss:StyleID="s63">
+    <Cell><Data ss:Type="String">Authentication</Data></Cell>
+    <Cell><Data ss:Type="String">True Passwordless OTP</Data></Cell>
+    <Cell><Data ss:Type="String">Secure login flow using high-delivery WhatsApp OTPs. Reduces friction while maintaining banking-grade security.</Data></Cell>
+    <Cell><Data ss:Type="String">Live</Data></Cell>
+   </Row>
+   <Row ss:StyleID="s63">
+    <Cell><Data ss:Type="String">Authentication</Data></Cell>
+    <Cell><Data ss:Type="String">Admin Command Center</Data></Cell>
+    <Cell><Data ss:Type="String">Centralized dashboard for system monitoring, user verification, and manual succession approval triggers.</Data></Cell>
+    <Cell><Data ss:Type="String">Live</Data></Cell>
+   </Row>
+   <Row ss:StyleID="s63">
+    <Cell><Data ss:Type="String">Asset Repository</Data></Cell>
+    <Cell><Data ss:Type="String">Digital Asset Vault</Data></Cell>
+    <Cell><Data ss:Type="String">Categorized storage for crypto keys, social media credentials, and cloud storage backup pointers.</Data></Cell>
+    <Cell><Data ss:Type="String">Live</Data></Cell>
+   </Row>
+   <Row ss:StyleID="s63">
+    <Cell><Data ss:Type="String">Asset Repository</Data></Cell>
+    <Cell><Data ss:Type="String">Financial Portfolio</Data></Cell>
+    <Cell><Data ss:Type="String">Structured data entry for Bank Accounts (IBAN/Swift), Insurance Policies, Demat accounts, and Mutual Funds.</Data></Cell>
+    <Cell><Data ss:Type="String">Live</Data></Cell>
+   </Row>
+   <Row ss:StyleID="s63">
+    <Cell><Data ss:Type="String">Asset Repository</Data></Cell>
+    <Cell><Data ss:Type="String">Physical Asset Ledger</Data></Cell>
+    <Cell><Data ss:Type="String">Records for Real Estate deeds, Jewelry inventories, and high-value physical collections with document attachments.</Data></Cell>
+    <Cell><Data ss:Type="String">Live</Data></Cell>
+   </Row>
+   <Row ss:StyleID="s63">
+    <Cell><Data ss:Type="String">AI Intelligence</Data></Cell>
+    <Cell><Data ss:Type="String">OCR Benefit Extraction</Data></Cell>
+    <Cell><Data ss:Type="String">Gemini-powered engine analyzes uploaded credit card statements to identify hidden airport lounge access, insurance coverage, and rewards.</Data></Cell>
+    <Cell><Data ss:Type="String">Live</Data></Cell>
+   </Row>
+   <Row ss:StyleID="s63">
+    <Cell><Data ss:Type="String">Succession Ops</Data></Cell>
+    <Cell><Data ss:Type="String">Inactivity Heartbeat</Data></Cell>
+    <Cell><Data ss:Type="String">Configurable monitors (3/6/12 months) that track user logins to determine active status.</Data></Cell>
+    <Cell><Data ss:Type="String">Live</Data></Cell>
+   </Row>
+   <Row ss:StyleID="s63">
+    <Cell><Data ss:Type="String">Succession Ops</Data></Cell>
+    <Cell><Data ss:Type="String">Nominee Notification</Data></Cell>
+    <Cell><Data ss:Type="String">Automated legal-grade communication sent to nominees via Email and WhatsApp once the "Red Alert" threshold is hit.</Data></Cell>
+    <Cell><Data ss:Type="String">Live</Data></Cell>
+   </Row>
+   <Row ss:StyleID="s63">
+    <Cell><Data ss:Type="String">Succession Ops</Data></Cell>
+    <Cell><Data ss:Type="String">Succession Verification</Data></Cell>
+    <Cell><Data ss:Type="String">Secure portal for nominees to submit death certificates or identity proof for admin-reviewed vault unlocking.</Data></Cell>
+    <Cell><Data ss:Type="String">Live</Data></Cell>
+   </Row>
+   <Row ss:StyleID="s63">
+    <Cell><Data ss:Type="String">Security</Data></Cell>
+    <Cell><Data ss:Type="String">Encryption at Rest</Data></Cell>
+    <Cell><Data ss:Type="String">All sensitive master data is encrypted using AES-256 before being committed to the RDS database.</Data></Cell>
+    <Cell><Data ss:Type="String">Live</Data></Cell>
+   </Row>
+   <Row ss:StyleID="s63">
+    <Cell><Data ss:Type="String">Security</Data></Cell>
+    <Cell><Data ss:Type="String">Audit Trail</Data></Cell>
+    <Cell><Data ss:Type="String">Immutable logs of every read/write action, login attempt, and IP address for full digital forensics.</Data></Cell>
+    <Cell><Data ss:Type="String">Live</Data></Cell>
+   </Row>
+   <Row ss:StyleID="s63">
+    <Cell><Data ss:Type="String">Security</Data></Cell>
+    <Cell><Data ss:Type="String">Security Questions</Data></Cell>
+    <Cell><Data ss:Type="String">Secondary challenge-response layer for critical account changes and password resets.</Data></Cell>
+    <Cell><Data ss:Type="String">Live</Data></Cell>
+   </Row>
+  </Table>
+ </Worksheet>
+ <Worksheet ss:Name="Mobile Features">
+  <Table>
+   <Column ss:Width="120"/>
+   <Column ss:Width="160"/>
+   <Column ss:Width="350"/>
+   <Row ss:StyleID="s62">
+    <Cell><Data ss:Type="String">Focus Area</Data></Cell>
+    <Cell><Data ss:Type="String">Mobile Feature</Data></Cell>
+    <Cell><Data ss:Type="String">User Experience Impact</Data></Cell>
+   </Row>
+   <Row ss:StyleID="s63">
+    <Cell><Data ss:Type="String">UX/UI</Data></Cell>
+    <Cell><Data ss:Type="String">Responsive Layout</Data></Cell>
+    <Cell><Data ss:Type="String">Fully fluid design tailored for iOS and Android web browsers, ensuring vault access on the go.</Data></Cell>
+   </Row>
+   <Row ss:StyleID="s63">
+    <Cell><Data ss:Type="String">UX/UI</Data></Cell>
+    <Cell><Data ss:Type="String">Bottom Navigation</Data></Cell>
+    <Cell><Data ss:Type="String">Thumb-friendly navigation system for quick switching between Assets, Nominees, and Settings.</Data></Cell>
+   </Row>
+   <Row ss:StyleID="s63">
+    <Cell><Data ss:Type="String">Interactions</Data></Cell>
+    <Cell><Data ss:Type="String">Touch-Optimized Forms</Data></Cell>
+    <Cell><Data ss:Type="String">Simplified input fields with native date pickers and numeric keypads to reduce data entry friction.</Data></Cell>
+   </Row>
+   <Row ss:StyleID="s63">
+    <Cell><Data ss:Type="String">Interactions</Data></Cell>
+    <Cell><Data ss:Type="String">WhatsApp One-Tap</Data></Cell>
+    <Cell><Data ss:Type="String">Direct integration with WhatsApp app on mobile for instant OTP retrieval and communication with support.</Data></Cell>
+   </Row>
+   <Row ss:StyleID="s63">
+    <Cell><Data ss:Type="String">Performance</Data></Cell>
+    <Cell><Data ss:Type="String">Fast Load Times</Data></Cell>
+    <Cell><Data ss:Type="String">Lazy loading and optimized assets to ensure high performance even on mobile data (4G/5G).</Data></Cell>
+   </Row>
+  </Table>
+ </Worksheet>
+ <Worksheet ss:Name="API Service Points">
+  <Table>
+   <Column ss:Width="150"/>
+   <Column ss:Width="150"/>
+   <Column ss:Width="350"/>
+   <Column ss:Width="100"/>
+   <Row ss:StyleID="s62">
+    <Cell><Data ss:Type="String">Service</Data></Cell>
+    <Cell><Data ss:Type="String">capability</Data></Cell>
+    <Cell><Data ss:Type="String">Expanded Detail</Data></Cell>
+    <Cell><Data ss:Type="String">Category</Data></Cell>
+   </Row>
+   <Row ss:StyleID="s63">
+    <Cell><Data ss:Type="String">OTP Service</Data></Cell>
+    <Cell><Data ss:Type="String">WhatsApp API</Data></Cell>
+    <Cell><Data ss:Type="String">Enterprise-grade WhatsApp Business API integration (MSG91/Twilio) for high-open-rate OTP delivery.</Data></Cell>
+    <Cell><Data ss:Type="String">Current</Data></Cell>
+   </Row>
+   <Row ss:StyleID="s63">
+    <Cell><Data ss:Type="String">OTP Service</Data></Cell>
+    <Cell><Data ss:Type="String">Custom OTP Length</Data></Cell>
+    <Cell><Data ss:Type="String">Support for configurable numeric codes (4, 6, or 8 digits) per implementation.</Data></Cell>
+    <Cell><Data ss:Type="String">Current</Data></Cell>
+   </Row>
+   <Row ss:StyleID="s63">
+    <Cell><Data ss:Type="String">OTP Service</Data></Cell>
+    <Cell><Data ss:Type="String">Failback Routing</Data></Cell>
+    <Cell><Data ss:Type="String">Smart routing that falls back to SMS or Email if the WhatsApp message fails to deliver within 30 seconds.</Data></Cell>
+    <Cell><Data ss:Type="String">Planned</Data></Cell>
+   </Row>
+   <Row ss:StyleID="s63">
+    <Cell><Data ss:Type="String">Message Forwarding</Data></Cell>
+    <Cell><Data ss:Type="String">Cross-Platform Sync</Data></Cell>
+    <Cell><Data ss:Type="String">Bridge incoming SMS messages from physical devices directly into a WhatsApp group or business chat for team monitoring.</Data></Cell>
+    <Cell><Data ss:Type="String">Planned</Data></Cell>
+   </Row>
+   <Row ss:StyleID="s63">
+    <Cell><Data ss:Type="String">Message Forwarding</Data></Cell>
+    <Cell><Data ss:Type="String">Webhook Integration</Data></Cell>
+    <Cell><Data ss:Type="String">JSON payload delivery to external CRMs or ERPs for every message received on the service number.</Data></Cell>
+    <Cell><Data ss:Type="String">Planned</Data></Cell>
+   </Row>
+   <Row ss:StyleID="s63">
+    <Cell><Data ss:Type="String">Message Forwarding</Data></Cell>
+    <Cell><Data ss:Type="String">Keyword Triggers</Data></Cell>
+    <Cell><Data ss:Type="String">Automatic categorization and alerting when specific keywords (e.g., 'URGENT', 'BILL', 'OTP') are detected.</Data></Cell>
+    <Cell><Data ss:Type="String">Planned</Data></Cell>
+   </Row>
+   <Row ss:StyleID="s63">
+    <Cell><Data ss:Type="String">Message Forwarding</Data></Cell>
+    <Cell><Data ss:Type="String">DLR Tracking</Data></Cell>
+    <Cell><Data ss:Type="String">Full Delivery Receipt (DLR) tracking to confirm messages have been read by the recipient.</Data></Cell>
+    <Cell><Data ss:Type="String">Planned</Data></Cell>
+   </Row>
+   <Row ss:StyleID="s63">
+    <Cell><Data ss:Type="String">General API</Data></Cell>
+    <Cell><Data ss:Type="String">RESTful Endpoints</Data></Cell>
+    <Cell><Data ss:Type="String">Stateless API architecture with Bearer token authentication for easy integration by developer teams.</Data></Cell>
+    <Cell><Data ss:Type="String">Current</Data></Cell>
+   </Row>
+  </Table>
+ </Worksheet>
+</Workbook>
