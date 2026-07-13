@@ -1,4 +1,4 @@
-#Stardust Vault
+# Stardust Vault
 
 A secure digital succession platform that allows users to safely store digital assets, important documents, and legacy information.
 
