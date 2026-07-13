@@ -68,3 +68,22 @@ flutter run
 ```
 
 ---
+## 📸 Screenshots
+
+### Landing Page
+![Landing Page](screenshots/landing_page.jpeg)
+
+### Login Page
+![Login Page](screenshots/login_page.jpeg)
+
+### Dashboard
+![Dashboard](screenshots/dashboard.jpeg)
+
+### Asset Page
+![Asset Page](screenshots/asset_page.jpeg)
+
+### Nominee Page
+![Nominee Page](screenshots/nominee_page.jpeg)
+
+### AI Chatbot
+![AI Chatbot](screenshots/ai_chatbot.jpeg)
