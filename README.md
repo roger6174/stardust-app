@@ -1,24 +1,70 @@
-# Stardust Vault - Unified Repository
+#Stardust Vault
 
-This repository contains both the frontend and backend components of the Stardust Vault Digital Succession Platform.
-
-## 📂 Project Structure
-
-- **`/backend`**: Node.js/Express.js backend service. Handles authentication, S3 document management, and RDS data storage.
-- **`/frontend`**: Flutter mobile application. Provides the user interface for asset management and digital vault access.
-
-## 🚀 Getting Started
-
-### Backend
-1. `cd backend`
-2. `npm install`
-3. Configure your `.env` file.
-4. `npm start`
-
-### Frontend
-1. `cd frontend`
-2. `flutter pub get`
-3. `flutter run`
+A secure digital succession platform that allows users to safely store digital assets, important documents, and legacy information.
 
 ---
-*Reorganized into monorepo structure on April 1, 2026.*
+
+## Features
+
+- User authentication
+- Secure digital vault
+- Document storage
+- Amazon S3 integration
+- Amazon RDS database
+- RESTful APIs
+- Flutter mobile application
+- Web version for earlier implementation
+
+---
+
+## Tech Stack
+
+### Frontend
+- Flutter
+
+### Backend
+- Node.js
+- Express.js
+
+### Web
+- React
+
+### Cloud
+- Amazon S3
+- Amazon RDS
+
+---
+
+## Project Structure
+
+```
+backend/
+frontend/
+stardust(web)/
+```
+
+- **backend** – Express.js backend
+- **frontend** – Flutter mobile application
+- **stardust(web)** – Initial web version developed before the Flutter application
+
+---
+
+## Getting Started
+
+### Backend
+
+```bash
+cd backend
+npm install
+npm start
+```
+
+### Frontend
+
+```bash
+cd frontend
+flutter pub get
+flutter run
+```
+
+---
