@@ -40,12 +40,12 @@ A secure digital succession platform that allows users to safely store digital a
 ```
 backend/
 frontend/
-stardust(web)/
+legacy-web-version/
 ```
 
 - **backend** – Express.js backend
 - **frontend** – Flutter mobile application
-- **stardust(web)** – Initial web version developed before the Flutter application
+- **legacy-web-version** – Initial web version developed before the Flutter application
 
 ---
 
